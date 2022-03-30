@@ -1,11 +1,10 @@
-package day1.proje1;
+package day1;
 
-import day1.utils.Driver;
-import day1.utils.ParentMethots;
+import utils.Driver;
+import utils.ParentMethots;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
