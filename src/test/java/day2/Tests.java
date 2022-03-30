@@ -51,6 +51,19 @@ public class Tests extends ParentMethots {
         if(actualUrl == url){
             System.out.println("doğru adrestesiniz");
         }
+        clickTo(checkOutButton);
+    }
+    @Test(dependsOnMethods = {"test4"})
+    public void test5(){
+        sendKeysTo(lFirstName,"yasin");
+        sendKeysTo(lLastName,"aroglan");
+        sendKeysTo(lZipCode,"34000");
+        clickTo(continueButton);
+
+        if(true)
+            wait.until(ExpectedConditions.visibilityOfElementLocated(totalText));
+            System.out.println("test başarılı bir şekilde tamamlanmıştır");
+        }
 
     }
-}
+
