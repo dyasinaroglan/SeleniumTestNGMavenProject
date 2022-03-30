@@ -1,7 +1,5 @@
-package day2;
+package day2.proje1;
 
-import org.checkerframework.checker.units.qual.A;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -9,9 +7,8 @@ import org.testng.annotations.Test;
 import utils.ParentMethots;
 
 import java.util.List;
-import java.util.Locale;
 
-import static day2.LocatorsClass.*;
+import static day2.proje1.LocatorsClass.*;
 
 public class Tests extends ParentMethots {
 
