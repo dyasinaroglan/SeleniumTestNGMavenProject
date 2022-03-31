@@ -1,0 +1,6 @@
+1) Bu siteye gidin. -> https://demo.applitools.com/
+        2) Username kısmına "krafttechno@gmail.com" girin.
+        3) Password kısmına "techno123." girin.
+        4) "Sign in" buttonunan tıklayınız.
+        5) "Your nearest branch closes in: 30m 5s" yazısının göründüğünü doğrulayınız.(Assert kullanın )
+        6) URL'in bu olduğunu doğrulayın. -> https://demo.applitools.com/app.html   (Assert kullanın )

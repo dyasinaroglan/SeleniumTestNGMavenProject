@@ -36,7 +36,6 @@ public class TestClass extends ParentMethots {
             driver.navigate().back();
             Thread.sleep(2000);
 
-
             List<WebElement> products = driver.findElements(By.cssSelector("span[class='title']"));
             if(products.size()==1){
                 System.out.println(userNames[i] + " : Bu userName ile login olundu....");
