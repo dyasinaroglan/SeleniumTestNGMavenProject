@@ -1,0 +1,13 @@
+/**
+         * https://www.saucedemo.com/  siteye git
+         * Bütün ürünleri sepete ekle
+         * Sepete git
+         * Sepetteki ürünleri önceki ürünlerle kiyasla
+         * dogruysa Checkout butonuna tikla
+         * Cikan formu doldur
+         * Continue butonuna tikla
+         *Total fiyati kiyasla
+         * Finish butonuna tikla
+         * "THANK YOU FOR YOUR ORDER" yazisinin sayfada oldugunu onayla
+         * Back Home basip bulundugu sayfanin url kontrol et "https://www.saucedemo.com/inventory.html"
+         */
