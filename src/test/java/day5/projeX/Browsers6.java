@@ -1,4 +1,4 @@
-package day5;
+package day5.projeX;
 
 public enum Browsers6 {
     EDGE,CHROME,FIRFOX,IE,SAFARI;

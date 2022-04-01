@@ -1,4 +1,4 @@
-package day5;
+package day5.projeX;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static day5.LocatorsClass6.*;
+import static day5.projeX.LocatorsClass6.*;
 
 public class TestClass6 extends ParentClass6{
 

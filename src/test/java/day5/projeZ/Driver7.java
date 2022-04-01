@@ -1,4 +1,4 @@
-package day5;
+package day5.projeZ;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -6,35 +6,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Driver6 {
-
+public class Driver7 {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
     public static WebDriver getDriver(){
-        return getDriver(Browsers6.CHROME);
+        return getDriver(Browsers7.CHROME);
     }
 
-    public static WebDriver getDriver(Browsers6 browsers6){
+
+    public static WebDriver getDriver(Browsers7 browsers7){
         if(driver == null){
-            switch (browsers6){
-                case IE :
-                    WebDriverManager.iedriver().setup();
-                    driver = new InternetExplorerDriver();
-                    break;
-                case EDGE:
+            switch (browsers7){
+                case EDGE :
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
-                case SAFARI:
-                    WebDriverManager.safaridriver().setup();
-                    driver = new SafariDriver();
-                case FIRFOX:
+                case IE:
+                    WebDriverManager.iedriver().setup();
+                    driver = new InternetExplorerDriver();
+                    break;
+                case FIREFOX:
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
+                    break;
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();

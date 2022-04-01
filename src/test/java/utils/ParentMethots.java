@@ -38,5 +38,7 @@ public class ParentMethots {
         Thread.sleep(2000);
         Driver.quit();
     }
-
+    public void sleepTo(long milis) throws InterruptedException {
+        Thread.sleep(milis);
+    }
 }

@@ -1,5 +1,6 @@
-package day5;
+package day5.projeX;
 
+import day5.projeX.Driver6;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
