@@ -31,4 +31,7 @@ public class ParentClass9 {
         sleepTo(4000);
         Driver9.quitDriver();
     }
+    public int random(int size){
+        return (int) (Math.random()*size);
+    }
 }
