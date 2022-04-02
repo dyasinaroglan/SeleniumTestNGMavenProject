@@ -41,5 +41,4 @@ public class Test7_1 extends ParentClass7{
     public void test(){
         Driver7.quitDriver();
     }
-
 }

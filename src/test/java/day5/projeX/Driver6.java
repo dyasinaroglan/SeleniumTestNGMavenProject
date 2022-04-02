@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Driver6 {
 
-    public static WebDriver driver;
-    public static WebDriverWait wait;
+    private static WebDriver driver;
+    private static WebDriverWait wait;
 
     public static WebDriver getDriver(){
         return getDriver(Browsers6.CHROME);

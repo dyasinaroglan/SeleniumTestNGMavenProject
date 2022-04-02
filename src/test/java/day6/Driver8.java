@@ -1,4 +1,4 @@
-package day5.projeZ;
+package day6;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,29 +8,29 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Driver7 {
-    private static WebDriver driver;
-    private static WebDriverWait wait;
+public class Driver8 {
+    public static WebDriver driver;
+    public static WebDriverWait wait;
 
-    public static WebDriver getDriver(){
-        return getDriver(Browsers7.CHROME);
+    public static WebDriver gotoDriver(){
+        return goToDriver(Browsers8.CHROME);
     }
 
 
-    public static WebDriver getDriver(Browsers7 browsers7){
+    public static WebDriver goToDriver(Browsers8 browsers8){
         if(driver == null){
-            switch (browsers7){
-                case EDGE :
+            switch (browsers8){
+                case FIREFOX :
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case EDGE:
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
                 case IE:
                     WebDriverManager.iedriver().setup();
                     driver = new InternetExplorerDriver();
-                    break;
-                case FIREFOX:
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
                     break;
                 default:
                     WebDriverManager.chromedriver().setup();
@@ -40,7 +40,9 @@ public class Driver7 {
         }
         return driver;
     }
-    public static void quitDriver(){
+    public static void quitDriver() throws InterruptedException {
+        Thread.sleep(1000);
         driver.quit();
     }
+
 }
