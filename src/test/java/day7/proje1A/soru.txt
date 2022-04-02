@@ -1,0 +1,7 @@
+https://www.amazon.com.tr/  siteye gidiniz
+    Cerezleri kabul et                                         // input[name='accept']
+    arama textbox a "Kitap" yazip ara butonuna click yapalim    // input#twotabsearchtextbox   // input[type='submit']
+    Ürün listesinde 40. kitaba e kadar scrool yapalim            (//img[@class='s-image'])[40]
+     sonra kitabi click yapalim
+     Twitter iconun kadar scroll yapip click yapalim         //  (//a[@target='_blank'])[2]
+     name kismina bir text gönderelim                        // input[type='text']
