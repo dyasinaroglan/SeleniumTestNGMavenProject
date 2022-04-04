@@ -67,9 +67,6 @@ public class TestS extends ParentClass9 {
         takeScreenShotByRobots(100,100,500,500);
     }
 
-
-
-
     public int random(int size){
         return (int) (Math.random()*size);
     }
