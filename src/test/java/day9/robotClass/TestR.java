@@ -4,9 +4,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 import static day9.robotClass.LocatorsR.*;
 
@@ -21,7 +25,7 @@ public class TestR extends ParentClass9 {
         clickTo(fileSelect);
     }
     @Test(priority = 1)
-    public void test2() throws AWTException, InterruptedException {
+    public void test2() throws AWTException, InterruptedException, IOException {
         StringSelection str = new StringSelection("C:\\Users\\yasin\\Desktop\\gazete pencere\\sayi371.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str,null);
 
@@ -34,6 +38,10 @@ public class TestR extends ParentClass9 {
         robot.waitForIdle();
 
         sleepTo(2000);
+        String fileName = "ScreenShot\\";
+        Rectangle rectangle = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());  //bütün ekranı alıyoruz.
+        BufferedImage image = robot.createScreenCapture(rectangle);
+        ImageIO.write(image, "png",new File(fileName));
     }
 
     @Test(priority = 2)

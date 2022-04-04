@@ -9,4 +9,10 @@ public interface LocatorsR {
     By check = By.id("terms");
     By submit = By.id("submitbutton");
     By message = By.id("res");
+
+
+    String url1 = "https://www.snapdeal.com/";
+    By searchText = By.id("inputValEnter");
+    By searchButton = By.cssSelector("span[class='searchTextSpan']");
+    By firstProducts = By.xpath("(//section)[2]//p[contains(@class,'title')]");
 }
