@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="A">
+        <groups>
+            <run>
+                <include name="grupA"></include>
+                <exclude name="grupB"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="day14.tests.TestClass1"></class>
+            <class name="day14.tests.TestClass2"></class>
+
+        </classes>
+    </test>
+    
+    <test name="B" verbose="2" preserve-order="true">
+        <groups>
+            <run>
+                <include name="grupB"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="day14.tests.TestClass2"></class>
+            <class name="day14.tests.TestClass1"></class>
+        </classes>
+    </test>
+</suite>

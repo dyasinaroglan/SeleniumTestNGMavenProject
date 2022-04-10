@@ -34,6 +34,7 @@ public class ParentMethots {
             element.sendKeys(text);
         }
     }
+
     public void quit() throws InterruptedException {
         Thread.sleep(2000);
         Driver.quit();

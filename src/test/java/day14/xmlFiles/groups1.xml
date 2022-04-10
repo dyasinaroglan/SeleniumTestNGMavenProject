@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="grup testi">
+        <groups>
+            <run>
+                <include name="grupA"></include>
+                <include name="grupC"></include>
+            </run>
+        </groups>
+       <classes>
+           <class name="day14.tests.TestClass1">
+               <methods>
+                   <exclude name="test2"></exclude>
+               </methods>
+           </class>
+           <class name="day14.tests.TestClass2"></class>
+
+       </classes>
+    </test>
+</suite>
